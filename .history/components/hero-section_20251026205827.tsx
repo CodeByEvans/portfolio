@@ -23,7 +23,7 @@ export function HeroSection() {
             </div>
 
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-balance">
                 {"> Hola, soy"}
                 <br />
                 <span className="text-primary">CodeByEvans</span>

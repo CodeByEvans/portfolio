@@ -121,7 +121,7 @@ export function ProjectsSection() {
 
       {/* Contenedor de proyectos */}
       <div style={{ height: `${projects.length * 100}vh` }}>
-        <div className="sticky top-0 lg:top-4 h-screen flex items-center justify-center overflow-hidden">
+        <div className="sticky top-32 h-screen flex items-center justify-center overflow-hidden">
           <div className="container mx-auto max-w-7xl px-4">
             <div className="relative">
               {projects.map((project, index) => (
@@ -138,8 +138,8 @@ export function ProjectsSection() {
                   >
                     <div className="grid lg:grid-cols-2 gap-0">
                       {/* Left side - Logo y Hero */}
-                      <div className="relative  p-6 lg:p-4 flex flex-col items-center justify-start bg-black/10 gap-6">
-                        <div className="w-24 h-24 lg:w-40 lg:h-40 flex items-center justify-center rounded-full overflow-hidden border-2 border-border/50 shadow-lg bg-white">
+                      <div className="relative min-h-[400px] lg:min-h-[600px] p-8 lg:p-12 flex flex-col items-center justify-start bg-black/10 gap-6">
+                        <div className="w-32 h-32 lg:w-40 lg:h-40 flex items-center justify-center rounded-full overflow-hidden border-2 border-border/50 shadow-lg bg-white">
                           <Image
                             src={project.logo || "/placeholder.svg"}
                             alt={`${project.title} Logo`}
@@ -149,7 +149,7 @@ export function ProjectsSection() {
                           />
                         </div>
 
-                        <div className="relative w-full h-[200px] lg:h-[300px] max-w-full rounded-xl overflow-hidden border-2 border-border/50 shadow-2xl hidden lg:flex">
+                        <div className="relative w-full h-[200px] lg:h-[300px] max-w-full rounded-xl overflow-hidden border-2 border-border/50 shadow-2xl">
                           <Image
                             src={project.image || "/placeholder.svg"}
                             alt={project.title}
@@ -160,22 +160,22 @@ export function ProjectsSection() {
                       </div>
 
                       {/* Right side - Details */}
-                      <div className="p-8 lg:p-6 lg:px-8 flex flex-col justify-center space-y-6 bg-background/80 backdrop-blur-sm">
+                      <div className="p-8 lg:p-12 flex flex-col justify-center space-y-6 bg-background/80 backdrop-blur-sm">
                         <div className="space-y-2">
                           <div className="flex items-center gap-2 text-sm text-muted-foreground font-mono">
                             <span className="text-primary">—</span>
                             <span>{project.title}</span>
                           </div>
-                          <h3 className="text-2xl lg:text-3xl font-bold text-balance">
+                          <h3 className="text-2xl lg:text-4xl font-bold text-balance">
                             {project.summary}
                           </h3>
                         </div>
 
-                        <p className="text-muted-foreground leading-relaxed text-sm lg:text-lg text-pretty">
+                        <p className="text-muted-foreground leading-relaxed text-md lg:text-lg text-pretty">
                           {project.description}
                         </p>
 
-                        <div className="space-y-3 hidden lg:block">
+                        <div className="space-y-3">
                           {project.features.map((feature, i) => (
                             <div key={i} className="flex items-center gap-3">
                               <span className="text-primary flex-shrink-0">

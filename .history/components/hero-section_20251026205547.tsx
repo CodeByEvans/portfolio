@@ -23,7 +23,7 @@ export function HeroSection() {
             </div>
 
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
                 {"> Hola, soy"}
                 <br />
                 <span className="text-primary">CodeByEvans</span>
@@ -31,7 +31,7 @@ export function HeroSection() {
                 <span>Desarrollador Full-Stack</span>
               </h1>
 
-              <p className="text-md md:text-lg text-muted-foreground leading-relaxed max-w-xl text-pretty">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl text-pretty">
                 Especializado en crear aplicaciones web modernas y escalables
                 con React, TypeScript y Next.js. Transformo ideas en productos
                 digitales de alto rendimiento.

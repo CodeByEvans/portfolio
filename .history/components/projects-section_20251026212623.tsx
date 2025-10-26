@@ -121,7 +121,7 @@ export function ProjectsSection() {
 
       {/* Contenedor de proyectos */}
       <div style={{ height: `${projects.length * 100}vh` }}>
-        <div className="sticky top-0 lg:top-4 h-screen flex items-center justify-center overflow-hidden">
+        <div className="sticky top-0 lg:top-6 h-screen flex items-center justify-center overflow-hidden">
           <div className="container mx-auto max-w-7xl px-4">
             <div className="relative">
               {projects.map((project, index) => (
@@ -138,7 +138,7 @@ export function ProjectsSection() {
                   >
                     <div className="grid lg:grid-cols-2 gap-0">
                       {/* Left side - Logo y Hero */}
-                      <div className="relative  p-6 lg:p-4 flex flex-col items-center justify-start bg-black/10 gap-6">
+                      <div className="relative lg:min-h-[600px] p-6 lg:p-12 flex flex-col items-center justify-start bg-black/10 gap-6">
                         <div className="w-24 h-24 lg:w-40 lg:h-40 flex items-center justify-center rounded-full overflow-hidden border-2 border-border/50 shadow-lg bg-white">
                           <Image
                             src={project.logo || "/placeholder.svg"}
@@ -160,13 +160,13 @@ export function ProjectsSection() {
                       </div>
 
                       {/* Right side - Details */}
-                      <div className="p-8 lg:p-6 lg:px-8 flex flex-col justify-center space-y-6 bg-background/80 backdrop-blur-sm">
+                      <div className="p-8 lg:p-12 flex flex-col justify-center space-y-6 bg-background/80 backdrop-blur-sm">
                         <div className="space-y-2">
                           <div className="flex items-center gap-2 text-sm text-muted-foreground font-mono">
                             <span className="text-primary">—</span>
                             <span>{project.title}</span>
                           </div>
-                          <h3 className="text-2xl lg:text-3xl font-bold text-balance">
+                          <h3 className="text-2xl lg:text-4xl font-bold text-balance w-full">
                             {project.summary}
                           </h3>
                         </div>

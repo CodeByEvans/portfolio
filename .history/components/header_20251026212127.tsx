@@ -6,6 +6,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 
 export function Header() {
+  const [scrollY, setScrollY] = React.useState(0);
   const [visible, setVisible] = React.useState(true);
   useEffect(() => {
     let lastScrollY = 0;

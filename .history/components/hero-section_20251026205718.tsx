@@ -13,7 +13,7 @@ export function HeroSection() {
 
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 pt-8 lg:pt-0">
+          <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
@@ -23,7 +23,7 @@ export function HeroSection() {
             </div>
 
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
                 {"> Hola, soy"}
                 <br />
                 <span className="text-primary">CodeByEvans</span>
@@ -31,7 +31,7 @@ export function HeroSection() {
                 <span>Desarrollador Full-Stack</span>
               </h1>
 
-              <p className="text-md md:text-lg text-muted-foreground leading-relaxed max-w-xl text-pretty">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl text-pretty">
                 Especializado en crear aplicaciones web modernas y escalables
                 con React, TypeScript y Next.js. Transformo ideas en productos
                 digitales de alto rendimiento.

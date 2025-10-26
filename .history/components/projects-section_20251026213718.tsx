@@ -160,7 +160,7 @@ export function ProjectsSection() {
                       </div>
 
                       {/* Right side - Details */}
-                      <div className="p-8 lg:p-6 lg:px-8 flex flex-col justify-center space-y-6 bg-background/80 backdrop-blur-sm">
+                      <div className="p-8 lg:p-4 flex flex-col justify-center space-y-6 bg-background/80 backdrop-blur-sm">
                         <div className="space-y-2">
                           <div className="flex items-center gap-2 text-sm text-muted-foreground font-mono">
                             <span className="text-primary">—</span>

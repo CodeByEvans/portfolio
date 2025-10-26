@@ -1,40 +1,11 @@
-"use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FileText, Mail } from "lucide-react";
 import Image from "next/image";
-import React, { useEffect } from "react";
 
 export function Header() {
-  const [visible, setVisible] = React.useState(true);
-  useEffect(() => {
-    let lastScrollY = 0;
-
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        // Scroll hacia abajo → ocultar
-        setVisible(false);
-      } else {
-        // Scroll hacia arriba → mostrar
-        setVisible(true);
-      }
-
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-sm transition-transform duration-300 ${
-        visible ? "translate-y-0" : "-translate-y-full"
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-lg font-mono text-primary font-bold">

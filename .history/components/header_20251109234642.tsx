@@ -1,0 +1,140 @@
+"use client";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { FileText, Mail, Menu, X } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+export function Header() {
+  const [visible, setVisible] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    let lastScrollY = 0;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Mostrar u ocultar el header según el scroll
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+
+      // Aplicar sombra al hacer scroll
+      setScrolled(currentScrollY > 10);
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navItems = [
+    { href: "#inicio", label: "Inicio" },
+    { href: "#proyectos", label: "Proyectos" },
+    { href: "#expertise", label: "Expertise" },
+    { href: "#contacto", label: "Contacto" },
+  ];
+
+  return (
+    <motion.header
+      initial={{ y: 0 }}
+      animate={{ y: visible ? 0 : -100 }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+      className={`fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/70 backdrop-blur-md transition-all duration-300 ${
+        scrolled ? "shadow-md shadow-primary/10" : "shadow-none"
+      }`}
+    >
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+        {/* Logo */}
+        <Link
+          href="/"
+          className="flex items-center gap-2 font-mono text-primary font-semibold hover:opacity-90 transition-opacity"
+        >
+          <div className="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-br from-primary/70 to-primary" />
+          <span className="text-white text-sm md:text-base">CodeByEvans</span>
+        </Link>
+
+        {/* Navegación Desktop */}
+        <nav className="hidden md:flex items-center gap-6">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="relative text-sm text-muted-foreground hover:text-foreground transition-colors group"
+            >
+              {item.label}
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full" />
+            </Link>
+          ))}
+        </nav>
+
+        {/* Botones */}
+        <div className="hidden md:flex items-center gap-3">
+          <Button variant="ghost" size="sm" asChild>
+            <Link href="#contacto">
+              <Mail className="h-4 w-4 mr-2" />
+              Contacto
+            </Link>
+          </Button>
+          <Button size="sm" asChild>
+            <Link href="/cv">
+              <FileText className="h-4 w-4 mr-2" />
+              CV
+            </Link>
+          </Button>
+        </div>
+
+        {/* Botón móvil */}
+        <button
+          className="md:hidden text-foreground hover:text-primary transition-colors"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
+      </div>
+
+      {/* Menú Mobile */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.nav
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="md:hidden border-t border-border/40 bg-background/95 backdrop-blur-sm"
+          >
+            <div className="flex flex-col items-center gap-4 py-4">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-base text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
+              <div className="flex gap-3 pt-3">
+                <Button size="sm" asChild>
+                  <Link href="/cv">
+                    <FileText className="h-4 w-4 mr-2" />
+                    CV
+                  </Link>
+                </Button>
+                <Button variant="ghost" size="sm" asChild>
+                  <Link href="#contacto">
+                    <Mail className="h-4 w-4 mr-2" />
+                    Contacto
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </motion.nav>
+        )}
+      </AnimatePresence>
+    </motion.header>
+  );
+}

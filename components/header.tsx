@@ -36,7 +36,8 @@ export function Header() {
   const navItems = [
     { href: "#inicio", label: "Inicio" },
     { href: "#proyectos", label: "Proyectos" },
-    { href: "#expertise", label: "Expertise" },
+    { href: "#sobre-mi", label: "Sobre Mi" },
+    { href: "#stack", label: "Stack" },
     { href: "#contacto", label: "Contacto" },
   ];
 
@@ -72,6 +73,7 @@ export function Header() {
                     ? "text-white bg-gray-900 p-2 rounded-full"
                     : ""
                 }`}
+                onClick={() => setActiveItem(item.href)}
               >
                 {item.label}
               </Link>

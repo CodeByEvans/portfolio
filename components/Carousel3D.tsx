@@ -73,25 +73,6 @@ export default function Carousel3D({ projects }: Carousel3DProps) {
 
   return (
     <div className="relative w-full py-12 overflow-hidden">
-      {/* Header */}
-      <div className="text-center mb-12 px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent mb-3"
-        >
-          Proyectos Destacados
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="text-muted-foreground text-base"
-        >
-          Explora mi trabajo y experiencia
-        </motion.p>
-      </div>
-
       {/* Carousel Container */}
       <div
         className="relative h-[480px] flex items-center justify-center mb-8"

@@ -1,11 +1,12 @@
 import { HeroSection } from "@/components/hero-section";
-import { WhyHireMeSection } from "@/components/why-hire-me-section";
+
 import { ProjectsSection } from "@/components/projects-section";
-import { ResearchSection } from "@/components/research-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { CTASection } from "@/components/cta-section";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import AboutSection from "@/components/about-section";
+import Stack from "@/components/stack-section";
 
 export default function Home() {
   return (
@@ -14,8 +15,8 @@ export default function Home() {
       <main>
         <HeroSection />
         <ProjectsSection />
-        <WhyHireMeSection />
-        <ResearchSection />
+        <AboutSection />
+        <Stack />
         <TestimonialsSection />
         <CTASection />
       </main>

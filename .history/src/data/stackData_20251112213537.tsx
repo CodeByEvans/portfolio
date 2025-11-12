@@ -56,14 +56,13 @@ export const stackDataSections = [
     items: frontEnd,
     description:
       "Empecé desarrollando con HTML, CSS y Javascript, pero rapidamente me interesé por frameworks más avanzados e interactivos como React. Esto me permitió hacer aplicaciones más eficientes y dinámicas, las cuales quise mejorar aun más con Next.js y TypeScript.",
-    baseVelocity: -4,
+    baseVelocity: -2,
   },
   {
     title: "Backend",
     items: backEnd,
     description:
       "Después de dominar el lado visual, me empezó a intrigar lo que pasaba detrás del telón. Así fue como entré al mundo del backend con Node.js y Express, aprendiendo a crear mis propios endpoints y conectar todo con bases de datos. Con el tiempo, fui profundizando en el modelado de datos, autenticación, SEO y la estructura de las APIs. Todo eso me ayudó a convertirme en un desarrollador full-stack más completo.",
-    baseVelocity: -5,
   },
   {
     title: "Database & Cloud",
@@ -77,7 +76,6 @@ export const stackDataSections = [
     items: tools,
     description:
       "Para mí, la clave está en mantener un flujo limpio y productivo. Uso Git y GitHub en cada proyecto, Zod para validaciones, i18next para traducción, y Playwright, Supertest y Jest para testing. Me gusta animar las interfaces con Framer Motion y Radix UI, trabajando la experiencia de usuario a la perfección a la vez que la accesibilidad. Nada de esto podría mantenerse sin unas buenas prácticas y buena documentación, así que hago de cada proyecto una experiencia unica.",
-    baseVelocity: -3,
   },
 ];
 

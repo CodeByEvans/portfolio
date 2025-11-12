@@ -56,7 +56,7 @@ export const stackDataSections = [
     items: frontEnd,
     description:
       "Empecé desarrollando con HTML, CSS y Javascript, pero rapidamente me interesé por frameworks más avanzados e interactivos como React. Esto me permitió hacer aplicaciones más eficientes y dinámicas, las cuales quise mejorar aun más con Next.js y TypeScript.",
-    baseVelocity: -4,
+    baseVelocity: -2,
   },
   {
     title: "Backend",

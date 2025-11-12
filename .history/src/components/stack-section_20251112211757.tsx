@@ -20,6 +20,14 @@ interface ParallaxProps {
 }
 
 const ParallaxItems = ({ children, baseVelocity }: ParallaxProps) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [totalWidth, setTotalWidth] = useState(0);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      setTotalWidth(containerRef.current.offsetWidth);
+    }
+  });
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -27,11 +35,11 @@ const ParallaxItems = ({ children, baseVelocity }: ParallaxProps) => {
     damping: 50,
     stiffness: 100,
   });
-  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 10], {
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 30], {
     clamp: false,
   });
 
-  const x = useTransform(baseX, (v) => `${wrap(-33.3, 0, v)}%`);
+  const x = useTransform(baseX, (v) => `${v % totalWidth}px`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((t, delta) => {
@@ -47,8 +55,8 @@ const ParallaxItems = ({ children, baseVelocity }: ParallaxProps) => {
 
   return (
     <div className="overflow-hidden flex whitespace-nowrap text-4xl w-full bg-[#060707]">
-      <motion.div className="flex w-max" style={{ x }}>
-        {[...children, ...children, ...children].map((child, idx) => (
+      <motion.div className="flex w-max" style={{ x }} ref={containerRef}>
+        {[...children, ...children].map((child, idx) => (
           <span key={idx} className="inline-block mr-8">
             {child}
           </span>
@@ -69,9 +77,9 @@ export const Stack = () => {
 
   return (
     <section id="stack" className="bg-[#060707] py-20">
-      <div className="text-center pb-12 ">
+      <div className="text-center py-20 ">
         <p className="text-cyan-500 font-mono text-sm tracking-wider mb-2">
-          &lt;/ Mis tecnologías &gt;
+          &lt;/ Mi Trayectoria &gt;
         </p>
         <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
           Stack
@@ -92,9 +100,7 @@ export const Stack = () => {
             <Card className="p-4 w-full mx-auto cursor-pointer hover:scale-[1.02] transition-all">
               <div className="flex flex-col justify-between items-center text-3xl overflow-hidden gap-4">
                 <h2>{section.title}</h2>
-                <ParallaxItems baseVelocity={section.baseVelocity}>
-                  {section.items}
-                </ParallaxItems>
+                <ParallaxItems baseVelocity={-6}>{section.items}</ParallaxItems>
                 <button className="text-sm text-primary cursor-pointer">
                   Saber más...
                 </button>
@@ -123,7 +129,7 @@ export const Stack = () => {
               <h2 className="text-3xl font-semibold mb-4 text-white">
                 {selectedSection.title}
               </h2>
-              <ParallaxItems baseVelocity={selectedSection.baseVelocity}>
+              <ParallaxItems baseVelocity={-10}>
                 {selectedSection.items}
               </ParallaxItems>
               <p className="text-base mt-6">{selectedSection.description}</p>

@@ -18,7 +18,7 @@ export const AboutSection = () => {
 
   const timelineItems = [
     {
-      year: "10/2023 - 03/2024",
+      year: "2021 - 2022",
       title: "Descubriendo la programación",
       description: "Iniciando en el desarrollo web con Java",
       detail:
@@ -27,7 +27,7 @@ export const AboutSection = () => {
       color: "teal",
     },
     {
-      year: "05/2024 - 10/2024",
+      year: "2024 - 2025",
       title: "Full Stack Open",
       description: "Estudiando el bootcamp de Full Stack Open",
       detail:
@@ -36,7 +36,7 @@ export const AboutSection = () => {
       color: "purple",
     },
     {
-      year: "2024 - Presente",
+      year: "2025 - Presente",
       title: "Full Stack Developer",
       description: "Creando aplicaciones web modernas y escalables",
       detail:
@@ -76,7 +76,7 @@ export const AboutSection = () => {
       </div>
 
       {/* Contenedor del timeline con scroll */}
-      <div ref={containerRef} className="relative pb-24 px-4">
+      <div ref={containerRef} className="relative  px-4">
         {/* Timeline Container */}
         <div className="max-w-6xl mx-auto relative">
           {/* Línea de fondo (gris) */}

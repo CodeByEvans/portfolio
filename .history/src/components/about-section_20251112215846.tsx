@@ -18,7 +18,7 @@ export const AboutSection = () => {
 
   const timelineItems = [
     {
-      year: "10/2023 - 03/2024",
+      year: "2023 - 2024",
       title: "Descubriendo la programación",
       description: "Iniciando en el desarrollo web con Java",
       detail:
@@ -27,7 +27,7 @@ export const AboutSection = () => {
       color: "teal",
     },
     {
-      year: "05/2024 - 10/2024",
+      year: "2023",
       title: "Full Stack Open",
       description: "Estudiando el bootcamp de Full Stack Open",
       detail:

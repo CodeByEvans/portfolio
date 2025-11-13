@@ -9,7 +9,7 @@ export function CTASection() {
   return (
     <section
       id="contacto"
-      className="py-24 px-4 bg-gray-950/80 relative overflow-hidden"
+      className="py-24 px-4 bg-gray-900/80 relative overflow-hidden"
     >
       <div className="container mx-auto max-w-4xl">
         {/* Fondo dinámico */}
@@ -24,14 +24,13 @@ export function CTASection() {
         >
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
-              ¿Listo para crear
+              {"> ¿Listo para crear"}
               <br />
               <span className="text-cyan-500">algo increible?</span>
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-              Busco oportunidades como desarrollador Full Stack. Puedo
-              contribuir a tu equipo creando aplicaciones escalables y
-              eficientes.
+              Estoy disponible para nuevos proyectos y colaboraciones. Hablemos
+              sobre cómo puedo ayudarte a hacer realidad tu próxima idea.
             </p>
           </div>
 

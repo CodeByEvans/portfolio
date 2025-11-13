@@ -39,7 +39,7 @@ export function TestimonialsSection() {
           <p className="text-cyan-500 font-mono text-sm tracking-wider mb-2">
             &lt;/ Testimonios &gt;
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
             Clientes Satisfechos
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">

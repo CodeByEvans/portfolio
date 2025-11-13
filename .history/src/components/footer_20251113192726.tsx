@@ -14,7 +14,7 @@ export function Footer() {
               <div className="flex items-center gap-3 hover:scale-105 transition-transform">
                 <div className="flex flex-col leading-tight">
                   <h1 className="text-white font-bold text-md">
-                    {"<CodeByEvans/>"}
+                    {"< CodeByEvans />"}
                   </h1>
                 </div>
               </div>
@@ -74,7 +74,8 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} CodeByEvans.
+            © {new Date().getFullYear()} CodeByEvans. Todos los derechos
+            reservados.
           </p>
         </div>
       </div>

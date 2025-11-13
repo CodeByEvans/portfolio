@@ -71,13 +71,11 @@ export const Stack = () => {
     <section id="stack" className="bg-[#060707] py-20">
       <div className="text-center pb-12 flex flex-col gap-2 ">
         <p className="text-cyan-500 font-mono text-sm tracking-wider">
-          &lt;/ Stack &gt;
+          &lt;/ Mis tecnologías &gt;
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold text-white">
-          Mi Stack Tecnológico
-        </h2>
+        <h2 className="text-3xl md:text-3xl font-bold text-white">Stack</h2>
         <p className="text-gray-400 text-sm md:text-lg max-w-2xl mx-auto">
-          Te presento mi stack de desarrollo web
+          Te presento mi stack tecnológico
         </p>
       </div>
 

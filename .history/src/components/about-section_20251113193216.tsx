@@ -102,11 +102,9 @@ export const AboutSection = () => {
       {/* Header fijo en la parte superior */}
       <div className="text-center py-20 px-4 flex flex-col gap-2 md:gap-4">
         <p className="text-cyan-500 font-mono text-sm tracking-wider">
-          &lt;/ Sobre Mi &gt;
+          &lt;/ Mi Trayectoria &gt;
         </p>
-        <h2 className="text-2xl md:text-3xl font-bold text-white">
-          Mi Trayectoria
-        </h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-white">Sobre Mí</h2>
         <p className="text-gray-400 text-sm md:text-lg max-w-2xl mx-auto">
           Conoce al desarrollador, más allá del código
         </p>

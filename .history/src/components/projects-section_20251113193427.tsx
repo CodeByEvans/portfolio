@@ -17,15 +17,15 @@ export function ProjectsSection() {
     <section id="proyectos" className="relative py-24" ref={ref}>
       <div className="text-center mb-12 px-4">
         <p className="text-cyan-500 font-mono text-sm tracking-wider mb-2">
-          &lt;/ Proyectos &gt;
+          &lt;/ Mi trabajo &gt;
         </p>
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent mb-3"
+          className="text-2xl md:text-53xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent mb-3"
         >
-          Mis Proyectos Destacados
+          Proyectos Destacados
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}

@@ -9,13 +9,11 @@ export function Footer() {
     <footer className="border-t border-border bg-card/50">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             <Link href="/" className="text-lg font-mono text-primary font-bold">
               <div className="flex items-center gap-3 hover:scale-105 transition-transform">
                 <div className="flex flex-col leading-tight">
-                  <h1 className="text-white font-bold text-md">
-                    {"<CodeByEvans/>"}
-                  </h1>
+                  <h1 className="text-white font-bold text-sm">CodeByEvans</h1>
                 </div>
               </div>
             </Link>
@@ -25,7 +23,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             <h3 className="font-bold text-foreground">Navegación</h3>
             <nav className="flex flex-col gap-2">
               {navItems.map((item) => (
@@ -40,7 +38,7 @@ export function Footer() {
             </nav>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="space-y-4">
             <h3 className="font-bold text-foreground">Contacto</h3>
             <div className="flex flex-col gap-3">
               <a
@@ -74,7 +72,8 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} CodeByEvans.
+            © {new Date().getFullYear()} CodeByEvans. Todos los derechos
+            reservados.
           </p>
         </div>
       </div>

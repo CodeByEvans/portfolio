@@ -74,7 +74,8 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} CodeByEvans.
+            © {new Date().getFullYear()} CodeByEvans. Todos los derechos
+            reservados.
           </p>
         </div>
       </div>

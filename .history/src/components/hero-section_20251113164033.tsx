@@ -13,7 +13,7 @@ export function HeroSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       id="inicio"
-      className="min-h-screen flex items-center justify-center  px-4 relative overflow-hidden "
+      className="min-h-screen flex items-center justify-center pt-20 px-4 relative overflow-hidden "
     >
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
 
@@ -22,8 +22,8 @@ export function HeroSection() {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 pt-8 lg:pt-0">
-            <div className="flex items-center justify-center md:justify-start flex-wrap gap-3 text-xs md:text-sm text-muted-foreground ">
-              <div className="inline-flex items-center gap-2 px-2 py-1 md:px-3 border border-primary/30 bg-primary/10 text-primary font-medium ">
+            <div className="flex items-center flex-wrap gap-3 text-sm  text-muted-foreground">
+              <div className="inline-flex items-center gap-2 px-2 py-1 md:px-3 border border-primary/30 bg-primary/10 text-primary font-medium xs">
                 {"< Hello World />"}
               </div>
 
@@ -31,16 +31,16 @@ export function HeroSection() {
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-                className="h-[2px] max-w-[2rem] md:max-w-[5rem]  bg-gradient-to-r from-primary/60 to-transparent rounded-full"
+                className="h-[2px] max-w-[3rem] md:max-w-[5rem]  bg-gradient-to-r from-primary/60 to-transparent rounded-full"
               />
 
-              <p className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-primary font-medium  backdrop-blur-sm">
+              <p className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-primary font-medium backdrop-blur-sm">
                 Full-Stack Developer
               </p>
             </div>
 
-            <div className="space-y-4 flex flex-col items-center md:items-start">
-              <h1 className="flex gap-3 md:block text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-balance ">
+            <div className="space-y-4">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-balance">
                 {"> Hola, soy "}
                 <span className="text-primary inline-block">
                   <Typewriter
@@ -56,13 +56,13 @@ export function HeroSection() {
                 </span>
               </h1>
 
-              <p className="text-sm md:text-lg text-muted-foreground leading-relaxed max-w-xl text-pretty text-center md:text-left">
+              <p className="text-md md:text-lg text-muted-foreground leading-relaxed max-w-xl text-pretty">
                 Desarrollador Full Stack especializado en crear aplicaciones web
                 modernas y escalables con React, TypeScript y Next.js.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start ">
+            <div className="flex flex-wrap gap-4">
               <motion.div whileHover={{ scale: 1.03 }}>
                 <Button
                   size="lg"
@@ -100,13 +100,13 @@ export function HeroSection() {
             className="relative flex justify-center"
           >
             {/* Glow detrás del avatar */}
-            <div className="absolute inset-0 blur-3xl bg-primary/30 rounded-full w-[90%] h-[90%]  top-5 left-5" />
+            <div className="absolute inset-0 blur-3xl bg-primary/30 rounded-full w-[90%] h-[90%] top-5 left-5" />
             <Image
               src="/avatar.jpg"
               alt="CodeByEvans Avatar"
               width={420}
               height={420}
-              className="w-60 h-80 md:w-[420px] md:h-[560px] object-cover rounded-3xl shadow-2xl border border-primary/30 relative z-10 hover:rotate-1 hover:scale-[1.02] transition-transform duration-500 ease-out"
+              className="object-cover rounded-3xl shadow-2xl border border-primary/30 relative z-10 hover:rotate-1 hover:scale-[1.02] transition-transform duration-500 ease-out"
             />
           </motion.div>
         </div>

@@ -13,7 +13,7 @@ export function HeroSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       id="inicio"
-      className="min-h-screen flex items-center justify-center  px-4 relative overflow-hidden "
+      className="min-h-screen flex items-center justify-center pt-20 px-4 relative overflow-hidden "
     >
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
 
@@ -40,7 +40,7 @@ export function HeroSection() {
             </div>
 
             <div className="space-y-4 flex flex-col items-center md:items-start">
-              <h1 className="flex gap-3 md:block text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-balance ">
+              <h1 className="text-lg md:text-3xl lg:text-4xl font-bold leading-tight text-balance max-w-2xl">
                 {"> Hola, soy "}
                 <span className="text-primary inline-block">
                   <Typewriter
@@ -56,13 +56,13 @@ export function HeroSection() {
                 </span>
               </h1>
 
-              <p className="text-sm md:text-lg text-muted-foreground leading-relaxed max-w-xl text-pretty text-center md:text-left">
+              <p className="text-md md:text-lg text-muted-foreground leading-relaxed max-w-xl text-pretty">
                 Desarrollador Full Stack especializado en crear aplicaciones web
                 modernas y escalables con React, TypeScript y Next.js.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start ">
+            <div className="flex flex-wrap gap-4">
               <motion.div whileHover={{ scale: 1.03 }}>
                 <Button
                   size="lg"
@@ -100,13 +100,13 @@ export function HeroSection() {
             className="relative flex justify-center"
           >
             {/* Glow detrás del avatar */}
-            <div className="absolute inset-0 blur-3xl bg-primary/30 rounded-full w-[90%] h-[90%]  top-5 left-5" />
+            <div className="absolute inset-0 blur-3xl bg-primary/30 rounded-full w-[90%] h-[90%] top-5 left-5" />
             <Image
               src="/avatar.jpg"
               alt="CodeByEvans Avatar"
               width={420}
               height={420}
-              className="w-60 h-80 md:w-[420px] md:h-[560px] object-cover rounded-3xl shadow-2xl border border-primary/30 relative z-10 hover:rotate-1 hover:scale-[1.02] transition-transform duration-500 ease-out"
+              className="object-cover rounded-3xl shadow-2xl border border-primary/30 relative z-10 hover:rotate-1 hover:scale-[1.02] transition-transform duration-500 ease-out"
             />
           </motion.div>
         </div>

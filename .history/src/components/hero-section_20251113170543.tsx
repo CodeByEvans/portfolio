@@ -40,7 +40,7 @@ export function HeroSection() {
             </div>
 
             <div className="space-y-4 flex flex-col items-center md:items-start">
-              <h1 className="flex gap-3 md:block text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-balance ">
+              <h1 className="flex gap-3 md:block text-4xl md:text-3xl lg:text-4xl font-bold leading-tight text-balance ">
                 {"> Hola, soy "}
                 <span className="text-primary inline-block">
                   <Typewriter

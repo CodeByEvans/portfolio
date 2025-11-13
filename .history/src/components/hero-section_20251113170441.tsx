@@ -40,7 +40,7 @@ export function HeroSection() {
             </div>
 
             <div className="space-y-4 flex flex-col items-center md:items-start">
-              <h1 className="flex gap-3 md:block text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-balance ">
+              <h1 className="flex gap-3 md:block text-lg md:text-3xl lg:text-4xl font-bold leading-tight text-balance ">
                 {"> Hola, soy "}
                 <span className="text-primary inline-block">
                   <Typewriter
@@ -56,7 +56,7 @@ export function HeroSection() {
                 </span>
               </h1>
 
-              <p className="text-sm md:text-lg text-muted-foreground leading-relaxed max-w-xl text-pretty text-center md:text-left">
+              <p className="text-md md:text-lg text-muted-foreground leading-relaxed max-w-xl text-pretty text-center md:text-left">
                 Desarrollador Full Stack especializado en crear aplicaciones web
                 modernas y escalables con React, TypeScript y Next.js.
               </p>

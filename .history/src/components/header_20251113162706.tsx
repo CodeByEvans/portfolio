@@ -62,7 +62,7 @@ export function Header() {
         </Link>
 
         {/* Navegación Desktop */}
-        <nav className="hidden md:flex border p-2 px-2 rounded-full">
+        <nav className="hidden border p-2 px-2 rounded-full">
           <div className="hidden md:flex items-center px-1 gap-1">
             {navItems.map((item) => (
               <Link

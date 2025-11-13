@@ -33,7 +33,7 @@ export function Footer() {
                   href={item.href}
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  {item.label}
+                  {item.title}
                 </Link>
               ))}
             </nav>

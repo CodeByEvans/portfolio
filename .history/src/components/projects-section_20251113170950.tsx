@@ -16,7 +16,7 @@ export function ProjectsSection() {
   return (
     <section id="proyectos" className="relative py-24" ref={ref}>
       <div className="text-center mb-12 px-4">
-        <p className="text-cyan-500 font-mono text-sm tracking-wider mb-2">
+        <p className="text-cyan-500 font-mono text-xs tracking-wider mb-2">
           &lt;/ Mi trabajo &gt;
         </p>
         <motion.h2

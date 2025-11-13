@@ -115,7 +115,7 @@ export const Stack = () => {
       <AnimatePresence>
         {selectedSection && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md bg-black/60 px-4"
+            className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md bg-black/60"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

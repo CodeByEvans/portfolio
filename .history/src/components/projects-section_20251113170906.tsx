@@ -31,7 +31,7 @@ export function ProjectsSection() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
-          className="text-muted-foreground text-sm md:text-lg max-w-3xl mx-auto"
+          className="text-muted-foreground text-base"
         >
           Explora mi trabajo y experiencia
         </motion.p>

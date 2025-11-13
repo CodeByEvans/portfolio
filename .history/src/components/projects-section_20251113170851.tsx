@@ -23,7 +23,7 @@ export function ProjectsSection() {
           initial={{ opacity: 0, y: -20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-2xl md:text-5xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent mb-3"
+          className="text-xl md:text-5xl font-bold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent mb-3"
         >
           Proyectos Destacados
         </motion.h2>
@@ -31,7 +31,7 @@ export function ProjectsSection() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
-          className="text-muted-foreground text-sm md:text-lg max-w-3xl mx-auto"
+          className="text-muted-foreground text-base"
         >
           Explora mi trabajo y experiencia
         </motion.p>

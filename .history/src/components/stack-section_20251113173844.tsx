@@ -122,7 +122,7 @@ export const Stack = () => {
           >
             <motion.div
               layoutId={selectedSection.title}
-              className="bg-[#0e0f10] border border-cyan-500 rounded-2xl p-8 max-w-xl w-full mx-4 text-center text-gray-200 shadow-2xl"
+              className="bg-[#0e0f10] border border-cyan-500 rounded-2xl p-8 max-w-xl  mx-4 text-center text-gray-200 shadow-2xl"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}

@@ -80,13 +80,13 @@ export const AboutSection = () => {
   ];
 
   // Calcular cuándo cada punto debe aparecer
-  const getPointProgress = (index: number) => {
+  const getPointProgress = (index) => {
     const pointStart = index / timelineItems.length;
     const pointEnd = (index + 1) / timelineItems.length;
     return useTransform(scrollYProgress, [pointStart, pointEnd], [0, 1]);
   };
 
-  const toggleCard = (item: TimelineItem, index: number) => {
+  const toggleCard = (item, index) => {
     if (isMobile) {
       setSelectedItem({ ...item, index });
     } else {
@@ -280,7 +280,7 @@ export const AboutSection = () => {
                   </div>
 
                   {/* Punto en la línea */}
-                  <div className="flex items-center justify-center w-auto pt-12 md:py-24">
+                  <div className="flex items-center justify-center w-auto pt-12 md:pt-24">
                     <motion.div
                       className="w-4 h-4 md:w-6 md:h-6 rounded-full border-4 border-gray-900 bg-cyan-500 shadow-lg shadow-cyan-500/50"
                       style={{

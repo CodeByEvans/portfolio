@@ -12,7 +12,6 @@ import Image from "next/image";
 
 interface Project {
   title: string;
-  description: string;
   summary: string;
   features: string[];
   image: string;
@@ -117,13 +116,21 @@ export default function Carousel3D({ projects }: Carousel3DProps) {
                 >
                   {/* Project Image */}
                   <div className="relative h-40 overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                      sizes="380px"
-                    />
+                    {project.image.endsWith(".gif") ? (
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover"
+                        sizes="380px"
+                      />
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/80" />
                   </div>
 

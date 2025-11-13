@@ -46,11 +46,11 @@ export function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-2 font-mono text-primary font-semibold hover:opacity-90 transition-opacity"
+          className="flex items-center  font-mono text-primary font-semibold hover:opacity-90 transition-opacity"
         >
-          <span className="text-white text-sm md:text-base">
-            {"CodeByEvans"}
-          </span>
+          <span className="text-white text-sm md:text-base">{"Code"}</span>
+          <span className="text-cyan-500 text-sm md:text-base">{"By"}</span>
+          <span className="text-white text-sm md:text-base">{"Evans"}</span>
         </Link>
 
         {/* Navegación Desktop */}

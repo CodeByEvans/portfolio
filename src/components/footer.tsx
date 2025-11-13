@@ -13,9 +13,20 @@ export function Footer() {
             <Link href="/" className="text-lg font-mono text-primary font-bold">
               <div className="flex items-center gap-3 hover:scale-105 transition-transform">
                 <div className="flex flex-col leading-tight">
-                  <h1 className="text-white font-bold text-md">
-                    {"<CodeByEvans/>"}
-                  </h1>
+                  <Link
+                    href="/"
+                    className="flex items-center  font-mono text-primary font-semibold hover:opacity-90 transition-opacity"
+                  >
+                    <span className="text-white text-sm md:text-base">
+                      {"Code"}
+                    </span>
+                    <span className="text-cyan-500 text-sm md:text-base">
+                      {"By"}
+                    </span>
+                    <span className="text-white text-sm md:text-base">
+                      {"Evans"}
+                    </span>
+                  </Link>
                 </div>
               </div>
             </Link>

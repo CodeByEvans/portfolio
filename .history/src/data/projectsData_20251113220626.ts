@@ -5,9 +5,9 @@ export const projects = [
       "Portfolio personal enseñando mis proyectos, habilidades e información",
     features: [
       "Desarrollo Full-Stack con Next.js y TypeScript",
-      "Diseno responsive y accesible con Tailwind CSS",
-      "Animaciones con Framer Motion y Radix UI",
-      "Tipado con Zod",
+      "Componentes interactivos con arquitectura escalable",
+      "APIs REST con Express y MySQL",
+      "Trabajo directo con stakeholders traduciendo requerimientos",
     ],
     image: "/codebyevans.gif",
     logo: "/codebyevans-logo.png",

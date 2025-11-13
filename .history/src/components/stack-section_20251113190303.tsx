@@ -46,8 +46,8 @@ const ParallaxItems = ({ children, baseVelocity }: ParallaxProps) => {
   });
 
   return (
-    <div className="overflow-hidden flex whitespace-nowrap text-xl md:text-3xl w-full bg-[#060707]">
-      <motion.div className="flex w-max py-2" style={{ x }}>
+    <div className="overflow-hidden flex whitespace-nowrap text-4xl w-full bg-[#060707]">
+      <motion.div className="flex w-max" style={{ x }}>
         {[...children, ...children, ...children].map((child, idx) => (
           <span key={idx} className="inline-block mr-8">
             {child}

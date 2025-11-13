@@ -1,11 +1,4 @@
-import {
-  FaReact,
-  FaNodeJs,
-  FaAws,
-  FaGitAlt,
-  FaDocker,
-  FaRust,
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaAws, FaGitAlt, FaDocker } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -34,7 +27,7 @@ const frontEnd = [
 
 const backEnd = [
   <FaNodeJs />,
-  <FaRust />,
+  <SiNextdotjs />,
   <SiGraphql />,
   <SiPrisma />,
   <SiExpress />,

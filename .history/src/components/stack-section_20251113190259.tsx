@@ -46,8 +46,8 @@ const ParallaxItems = ({ children, baseVelocity }: ParallaxProps) => {
   });
 
   return (
-    <div className="overflow-hidden flex whitespace-nowrap text-xl md:text-3xl w-full bg-[#060707]">
-      <motion.div className="flex w-max py-2" style={{ x }}>
+    <div className="overflow-hidden flex whitespace-nowrap text-4xl w-full bg-[#060707]">
+      <motion.div className="flex w-max" style={{ x }}>
         {[...children, ...children, ...children].map((child, idx) => (
           <span key={idx} className="inline-block mr-8">
             {child}
@@ -88,7 +88,7 @@ export const Stack = () => {
             onClick={() => setSelectedSection(section)}
           >
             <Card className="p-4 w-full mx-auto cursor-pointer hover:scale-[1.02] transition-all">
-              <div className="flex flex-col justify-between items-center text-sm md:text-2xl overflow-hidden gap-4">
+              <div className="flex flex-col justify-between items-center text-sm md:text-3xl overflow-hidden gap-4">
                 <h2>{section.title}</h2>
                 <ParallaxItems baseVelocity={section.baseVelocity}>
                   {section.items}

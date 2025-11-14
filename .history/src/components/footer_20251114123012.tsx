@@ -15,7 +15,7 @@ export function Footer() {
               className="flex items-center text-lg font-mono text-primary font-bold"
             >
               <div className="flex items-center gap-3 hover:scale-105 transition-transform">
-                <div className=" leading-tight">
+                <div className="flex flex-col leading-tight">
                   <span className="text-white text-sm md:text-base">
                     {"Code"}
                   </span>

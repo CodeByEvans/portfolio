@@ -82,10 +82,10 @@ export function Header() {
             </Link>
           </Button>
           <Button size="sm" asChild>
-            <a href="/cv.pdf" download className="flex items-center">
+            <Link href="/cv">
               <FileText className="h-4 w-4 mr-2" />
               CV
-            </a>
+            </Link>
           </Button>
         </div>
 

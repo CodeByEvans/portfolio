@@ -10,12 +10,9 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="flex flex-col gap-4">
-            <Link
-              href="/"
-              className="flex items-center text-lg font-mono text-primary font-bold"
-            >
+            <Link href="/" className="text-lg font-mono text-primary font-bold">
               <div className="flex items-center gap-3 hover:scale-105 transition-transform">
-                <div className=" leading-tight">
+                <div className="flex flex-col leading-tight">
                   <span className="text-white text-sm md:text-base">
                     {"Code"}
                   </span>

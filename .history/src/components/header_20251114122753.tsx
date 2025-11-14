@@ -81,7 +81,7 @@ export function Header() {
               Contacto
             </Link>
           </Button>
-          <Button size="sm" asChild>
+          <Button size="sm">
             <a href="/cv.pdf" download className="flex items-center">
               <FileText className="h-4 w-4 mr-2" />
               CV

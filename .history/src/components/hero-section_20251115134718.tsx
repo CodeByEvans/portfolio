@@ -86,7 +86,7 @@ export function HeroSection() {
                 >
                   <a href="/cv.pdf" download className="flex items-center">
                     <FileText className="h-4 w-4 mr-2" />
-                    Ver CV
+                    CV
                   </a>
                 </Button>
               </motion.div>

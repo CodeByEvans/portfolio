@@ -70,6 +70,5 @@ export const projects = [
     gradient: "from-teal-500/20 via-cyan-500/20 to-blue-500/20",
     status: "en-desarrollo",
     url: null,
-    github: "https://github.com/CodeByEvans/amandoando.git",
   },
 ];

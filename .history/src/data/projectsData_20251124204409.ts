@@ -19,7 +19,7 @@ export const projects = [
     github: "https://github.com/CodeByEvans/clover-studio.git",
   },
   {
-    title: "CodeByEvans",
+    title: "CodeByEvans Portfolio",
     summary:
       "Portfolio personal enseñando mis proyectos, habilidades e información",
     features: [
@@ -30,18 +30,13 @@ export const projects = [
     ],
     image: "/codebyevans.gif",
     logo: "/codebyevans-logo.png",
-    tags: [
-      "Typescript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Radix UI",
-      "Next.js",
-    ],
+    tags: ["Typescript", "Tailwind CSS", "Framer Motion", "Radix UI"],
     gradient: "from-blue-500/20 via-indigo-500/20 to-purple-500/20",
     status: "activo",
     url: "https://codebyevans.es/",
     github: "https://github.com/CodeByEvans/portfolio.git",
   },
+
   {
     title: "AmandoAndo",
     description:
@@ -70,6 +65,5 @@ export const projects = [
     gradient: "from-teal-500/20 via-cyan-500/20 to-blue-500/20",
     status: "en-desarrollo",
     url: null,
-    github: "https://github.com/CodeByEvans/amandoando.git",
   },
 ];

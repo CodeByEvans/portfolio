@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: "CodeByEvans Portfolio",
+    summary:
+      "Portfolio personal enseñando mis proyectos, habilidades e información",
+    features: [
+      "Desarrollo Full-Stack con Next.js y TypeScript",
+      "Diseno responsive y accesible con Tailwind CSS",
+      "Animaciones con Framer Motion y Radix UI",
+      "Tipado con Zod",
+    ],
+    image: "/codebyevans.gif",
+    logo: "/codebyevans-logo.png",
+    tags: ["Typescript", "Tailwind CSS", "Framer Motion", "Radix UI"],
+    gradient: "from-blue-500/20 via-indigo-500/20 to-purple-500/20",
+    status: "activo",
+    url: "https://codebyevans.es/",
+    github: "https://github.com/CodeByEvans/portfolio.git",
+  },
+  {
     title: "Clover Studio",
     description:
       "Aplicación web desarrollada para una marca artesanal de velas aromáticas y wax melts.",
@@ -17,30 +35,6 @@ export const projects = [
     status: "en-desarrollo",
     url: "https://cloverstudio.es",
     github: "https://github.com/CodeByEvans/clover-studio.git",
-  },
-  {
-    title: "CodeByEvans",
-    summary:
-      "Portfolio personal enseñando mis proyectos, habilidades e información",
-    features: [
-      "Desarrollo Full-Stack con Next.js y TypeScript",
-      "Diseno responsive y accesible con Tailwind CSS",
-      "Animaciones con Framer Motion y Radix UI",
-      "Tipado con Zod",
-    ],
-    image: "/codebyevans.gif",
-    logo: "/codebyevans-logo.png",
-    tags: [
-      "Typescript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Radix UI",
-      "Next.js",
-    ],
-    gradient: "from-blue-500/20 via-indigo-500/20 to-purple-500/20",
-    status: "activo",
-    url: "https://codebyevans.es/",
-    github: "https://github.com/CodeByEvans/portfolio.git",
   },
   {
     title: "AmandoAndo",
@@ -70,6 +64,5 @@ export const projects = [
     gradient: "from-teal-500/20 via-cyan-500/20 to-blue-500/20",
     status: "en-desarrollo",
     url: null,
-    github: "https://github.com/CodeByEvans/amandoando.git",
   },
 ];

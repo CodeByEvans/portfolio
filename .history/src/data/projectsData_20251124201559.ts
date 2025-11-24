@@ -1,25 +1,6 @@
 export const projects = [
   {
-    title: "Clover Studio",
-    description:
-      "Aplicación web desarrollada para una marca artesanal de velas aromáticas y wax melts.",
-    summary: "Tienda online para estudio de velas artesanales",
-    features: [
-      "Catálogo dinámico de productos con categorías y etiquetas",
-      "Carrito de compras con gestión de cantidades y eliminación de productos",
-      "Dashboard de administración de productos y contenido",
-      "Diseño responsive adaptado a móviles y tablets",
-    ],
-    image: "/clover-studio.png",
-    logo: "/clover-logo.jpg",
-    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Supabase"],
-    gradient: "from-pink-500/20 via-rose-500/20 to-red-500/20",
-    status: "en-desarrollo",
-    url: "https://cloverstudio.es",
-    github: "https://github.com/CodeByEvans/clover-studio.git",
-  },
-  {
-    title: "CodeByEvans",
+    title: "CodeByEvans Portfolio",
     summary:
       "Portfolio personal enseñando mis proyectos, habilidades e información",
     features: [
@@ -30,17 +11,30 @@ export const projects = [
     ],
     image: "/codebyevans.gif",
     logo: "/codebyevans-logo.png",
-    tags: [
-      "Typescript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Radix UI",
-      "Next.js",
-    ],
+    tags: ["Typescript", "Tailwind CSS", "Framer Motion", "Radix UI"],
     gradient: "from-blue-500/20 via-indigo-500/20 to-purple-500/20",
     status: "activo",
     url: "https://codebyevans.es/",
     github: "https://github.com/CodeByEvans/portfolio.git",
+  },
+  {
+    title: "Clover Studio",
+    description:
+      "Pagina web desarrollada para una marca artesanal de velas aromáticas y wax melts. En proceso de expansión con tienda online próximamente.",
+    summary: "Landing page para estudio de velas artesanales",
+    features: [
+      "Diseño y desarrollo de landing page con Next.js",
+      "Componentes reutilizables y escalables con TypeScript",
+      "Optimización de rendimiento: imágenes, lazy loading y SEO",
+      "Diseño responsive adaptado a móviles y tablets",
+    ],
+    image: "/clover-studio.webp",
+    logo: "/clover-logo.jpg",
+    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Supabase"],
+    gradient: "from-pink-500/20 via-rose-500/20 to-red-500/20",
+    status: "en-desarrollo",
+    url: "https://cloverstudio.es",
+    github: "https://github.com/CodeByEvans/clover-studio.git",
   },
   {
     title: "AmandoAndo",
@@ -70,6 +64,5 @@ export const projects = [
     gradient: "from-teal-500/20 via-cyan-500/20 to-blue-500/20",
     status: "en-desarrollo",
     url: null,
-    github: "https://github.com/CodeByEvans/amandoando.git",
   },
 ];

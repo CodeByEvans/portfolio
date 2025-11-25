@@ -38,7 +38,7 @@ export function Header() {
       initial={{ y: 0 }}
       animate={{ y: visible ? 0 : -90 }}
       transition={{ duration: 0.35, ease: "easeOut" }}
-      className={`sticky top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-md transition-all duration-300 ${
+      className={`sticky top-0 left-0 right-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-md transition-all duration-300 ${
         scrolled ? "shadow-lg shadow-primary/10" : "shadow-none"
       }`}
     >
